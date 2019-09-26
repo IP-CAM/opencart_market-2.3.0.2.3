@@ -9,8 +9,6 @@ out
 gen
 ### OpenCart template
 .htaccess
-/config.php
-admin/config.php
 
 !index.html
 
@@ -29,3 +27,4 @@ vqmod/vqcache/*
 vqmod/checked.cache
 vqmod/mods.cache
 
+!/system/config/db_config.php
