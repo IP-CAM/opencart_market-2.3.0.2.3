@@ -1300,10 +1300,13 @@ class ControllerCatalogProduct extends Controller {
 		// Image
 		if (isset($this->request->post['image'])) {
 			$data['image'] = $this->request->post['image'];
+			$data['thumb_name'] = basename($data['image'], getImgExt(DIR_IMAGE . $data['image']));
 		} elseif (!empty($product_info)) {
 			$data['image'] = $product_info['image'];
+			$data['thumb_name'] = basename($product_info['image'], getImgExt(DIR_IMAGE . $data['image']));
 		} else {
 			$data['image'] = '';
+			$data['thumb_name'] = '';
 		}
 
 		$this->load->model('tool/image');
@@ -1315,6 +1318,7 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
+
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 
@@ -1340,6 +1344,7 @@ class ControllerCatalogProduct extends Controller {
 
 			$data['product_images'][] = array(
 				'image'      => $image,
+				'name'       => $image ? basename($image, getImgExt(DIR_IMAGE . $product_image['image'])) : '',
 				'thumb'      => $this->model_tool_image->resize($thumb, 100, 100),
 				'sort_order' => $product_image['sort_order']
 			);

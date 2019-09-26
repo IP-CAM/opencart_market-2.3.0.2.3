@@ -1,0 +1,31 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### OpenCart template
+.htaccess
+/config.php
+admin/config.php
+
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
+
+system/storage/
+
+# vQmod log files
+vqmod/logs/*
+# vQmod cache files
+vqmod/vqcache/*
+vqmod/checked.cache
+vqmod/mods.cache
+

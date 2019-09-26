@@ -37,3 +37,9 @@ if(!function_exists('hash_equals')) {
 		}
 	}
 }
+
+function getImgExt($path) {
+	$ext = pathinfo($path, PATHINFO_EXTENSION);
+
+	return '.' . $ext;
+}

@@ -1,28 +1,31 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://opencart.sevenpowerx.loc/');
+$HOST = $_SERVER['HTTP_HOST'];
+
+define('HTTP_SERVER', 		$protocol . '://' . $HOST.'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://opencart.sevenpowerx.loc/');
+define('HTTPS_SERVER', 		$protocol . '://' . $HOST.'/');
 
 // DIR
-define('DIR_APPLICATION', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/catalog/');
-define('DIR_SYSTEM', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/');
-define('DIR_IMAGE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/image/');
-define('DIR_LANGUAGE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/catalog/language/');
-define('DIR_TEMPLATE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/catalog/view/theme/');
-define('DIR_CONFIG', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/config/');
-define('DIR_CACHE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/cache/');
-define('DIR_DOWNLOAD', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/download/');
-define('DIR_LOGS', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/logs/');
-define('DIR_MODIFICATION', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/modification/');
-define('DIR_UPLOAD', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/upload/');
+$DIR = dirname(__FILE__);
+
+// DIR
+define('DIR_APPLICATION', 	$DIR . '/catalog/');
+define('DIR_SYSTEM', 		$DIR . '/system/');
+define('DIR_IMAGE', 		$DIR . '/image/');
+define('DIR_LANGUAGE', 		$DIR . '/catalog/language/');
+define('DIR_TEMPLATE', 		$DIR . '/catalog/view/theme/');
+define('DIR_CONFIG', 		$DIR . '/system/config/');
+define('DIR_CACHE', 		$DIR . '/system/storage/cache/');
+define('DIR_DOWNLOAD', 		$DIR . '/system/storage/download/');
+define('DIR_LOGS', 			$DIR . '/system/storage/logs/');
+define('DIR_MODIFICATION', 	$DIR . '/system/storage/modification/');
+define('DIR_UPLOAD', 		$DIR . '/system/storage/upload/');
+
+// PARSE BITRIX ID PARTS
+define('BITRIX_HASH_F', 'Jdujql238dlzxi2');
+define('BITRIX_HASH_S', '39asjask32lda');
 
 // DB
-define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'opencart_sevenpowerx');
-define('DB_PORT', '3306');
-define('DB_PREFIX', 'oc_');
+require_once (DIR_CONFIG.'db_config.php');

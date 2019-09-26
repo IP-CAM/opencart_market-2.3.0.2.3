@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9ad0604a-87a2-41ab-b7c7-db428a82f20a" name="opencart" url="http://s23.thehost.com.ua">
+        <fileTransfer host="s23.thehost.com.ua" port="22" rootFolder="/var/www/serik_lav7/data/www/opencart.sevenpowerx.com.ua" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

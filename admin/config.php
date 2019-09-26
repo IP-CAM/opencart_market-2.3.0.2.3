@@ -1,31 +1,29 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://opencart.sevenpowerx.loc/admin/');
-define('HTTP_CATALOG', 'http://opencart.sevenpowerx.loc/');
+$HOST = $_SERVER['HTTP_HOST'];
+
+define('HTTP_SERVER', 		$protocol . '://' . $HOST.'/admin/');
+define('HTTP_CATALOG', 		$protocol . '://' . $HOST.'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://opencart.sevenpowerx.loc/admin/');
-define('HTTPS_CATALOG', 'http://opencart.sevenpowerx.loc/');
+define('HTTPS_SERVER', 		$protocol . '://' . $HOST.'/admin/');
+define('HTTPS_CATALOG', 	$protocol . '://' . $HOST.'/');
 
 // DIR
-define('DIR_APPLICATION', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/admin/');
-define('DIR_SYSTEM', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/');
-define('DIR_IMAGE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/image/');
-define('DIR_LANGUAGE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/admin/language/');
-define('DIR_TEMPLATE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/admin/view/template/');
-define('DIR_CONFIG', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/config/');
-define('DIR_CACHE', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/cache/');
-define('DIR_DOWNLOAD', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/download/');
-define('DIR_LOGS', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/logs/');
-define('DIR_MODIFICATION', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/modification/');
-define('DIR_UPLOAD', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/system/storage/upload/');
-define('DIR_CATALOG', '/Users/serik_lav/Documents/sevenpowerx/opencart.loc/catalog/');
+$DIR = dirname(dirname(__FILE__));
+
+define('DIR_APPLICATION', 	$DIR . '/admin/');
+define('DIR_SYSTEM', 		$DIR . '/system/');
+define('DIR_IMAGE', 		$DIR . '/image/');
+define('DIR_LANGUAGE', 		$DIR . '/admin/language/');
+define('DIR_TEMPLATE', 		$DIR . '/admin/view/template/');
+define('DIR_CONFIG', 		$DIR . '/system/config/');
+define('DIR_CACHE', 		$DIR . '/system/storage/cache/');
+define('DIR_DOWNLOAD', 		$DIR . '/system/storage/download/');
+define('DIR_LOGS', 			$DIR . '/system/storage/logs/');
+define('DIR_MODIFICATION', 	$DIR .'/system/storage/modification/');
+define('DIR_UPLOAD', 		$DIR . '/system/storage/upload/');
+define('DIR_CATALOG', 		$DIR . '/catalog/');
 
 // DB
-define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'opencart_sevenpowerx');
-define('DB_PORT', '3306');
-define('DB_PREFIX', 'oc_');
+require_once (DIR_CONFIG.'db_config.php');
