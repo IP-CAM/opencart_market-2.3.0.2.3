@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45bb634d-63b0-44c9-977f-f0f40ae19915" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system/config/db_config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controller/catalog/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controller/catalog/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/model/catalog/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/model/catalog/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view/template/catalog/product_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/template/catalog/product_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/apple_cinema_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/canon_eos_5d_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/canon_eos_5d_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/canon_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/compaq_presario.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/catalog/demo/hp_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/helper/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/helper/general.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/storage/cache/cache.currency.1558644213" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/storage/cache/cache.language.1558644213" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/storage/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/system/storage/logs/error.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,16 +95,11 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@59348d46" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@20b88d9" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4b2a5acd" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d0dfdb85" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d0dfdb85" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@646d3737" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -151,8 +125,17 @@
       <workItem from="1563309448047" duration="420000" />
       <workItem from="1563400100698" duration="681000" />
       <workItem from="1563433839930" duration="1387000" />
-      <workItem from="1569532125004" duration="1171000" />
+      <workItem from="1569532125004" duration="1424000" />
+      <workItem from="1569533579071" duration="222000" />
     </task>
+    <task id="LOCAL-00001" summary="Git full site and new markets extension">
+      <created>1569533359434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569533359434</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,10 +146,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Git full site and new markets extension" />
+    <option name="LAST_COMMIT_MESSAGE" value="Git full site and new markets extension" />
   </component>
 </project>
